@@ -12,7 +12,6 @@ console.log("Fetching data from database...");
 fetchStudents(rawData => {
   console.log("Data received!\n");
 
-  // raw datayı Student instance'ına çevir
   const students = rawData.map(
     s => new Student(s.id, s.name, s.courses)
   );
